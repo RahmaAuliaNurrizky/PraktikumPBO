@@ -1,5 +1,3 @@
-package P2;
-
 public class TestLaptop {
     public static void main(String[] args) {
         Laptop lab1 = new Laptop();

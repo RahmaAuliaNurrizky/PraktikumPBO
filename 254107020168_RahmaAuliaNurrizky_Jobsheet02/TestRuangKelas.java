@@ -1,5 +1,3 @@
-package P2;
-
 public class TestRuangKelas {
     public static void main(String[] args) {
         RuangKelas ruang1 = new RuangKelas();

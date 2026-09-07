@@ -1,5 +1,3 @@
-package P2;
-
 public class TestTransaksiPeminjaman {
     public static void main(String[] args) {
         TransaksiPeminjaman transaksi1 = new TransaksiPeminjaman();

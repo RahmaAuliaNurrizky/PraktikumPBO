@@ -1,5 +1,3 @@
-package P2;
-
 public class TestBuku {
 
     public static void main(String[] args) {
@@ -7,7 +5,6 @@ public class TestBuku {
         buku1.isbn = "978-979-29-6104-2";
         buku1.judul = "Dasar Pemrograman Berbasis Objek";
         buku1.penulis = "Abdul Kadir";
-        
         buku1.tahunTerbit = 2021;
         buku1.tampilInfoBuku();
 

@@ -1,5 +1,3 @@
-package P2;
-
 public class RuangKelas {
     public String kodeRuang;
     public String namaGedung;
@@ -16,6 +14,6 @@ public class RuangKelas {
         System.out.println("Nama Gedung        : " + namaGedung);
         System.out.println("Kapasitas          : " + kapasitas + " orang");
         System.out.println("Jumlah Mahasiswa   : " + jumlahMahasiswa + " orang");
-        System.err.println("Sisa Kursi         : " + hitungSisaKursi() + " kursi");
+        System.out.println("Sisa Kursi         : " + hitungSisaKursi() + " kursi");
     }
 }

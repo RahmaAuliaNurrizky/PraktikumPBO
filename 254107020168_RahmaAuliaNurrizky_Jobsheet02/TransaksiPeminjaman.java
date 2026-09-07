@@ -1,5 +1,3 @@
-package P2;
-
 public class TransaksiPeminjaman {
     public String idTransaksi;
     public String namaPeminjam;

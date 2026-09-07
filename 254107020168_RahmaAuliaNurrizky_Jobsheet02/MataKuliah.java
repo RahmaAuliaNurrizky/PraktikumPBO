@@ -1,5 +1,3 @@
-package P2;
-
 public class MataKuliah {
     public String kodeMK;
     public String namaMK;
@@ -11,10 +9,10 @@ public class MataKuliah {
     }
 
     public void tampilData() {
-        System.err.println("Kode Mata Kuliah    : " + kodeMK);
-        System.err.println("Nama Mata Kuliah    : " + namaMK);
-        System.err.println("SKS                 : " + sks);
-        System.err.println("Nilai Angka         : " + nilaiAngka);
-        System.err.println("Bobot Nilai         : " + hitungBobotNilai());
+        System.out.println("Kode Mata Kuliah    : " + kodeMK);
+        System.out.println("Nama Mata Kuliah    : " + namaMK);
+        System.out.println("SKS                 : " + sks);
+        System.out.println("Nilai Angka         : " + nilaiAngka);
+        System.out.println("Bobot Nilai         : " + hitungBobotNilai());
     }
 }

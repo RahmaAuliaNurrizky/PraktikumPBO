@@ -1,5 +1,3 @@
-package P2;
-
 public class BagiKelompok {
     public static void main(String[] args) {
         System.out.println("awal program");

@@ -1,5 +1,3 @@
-package P2;
-
 public class Laptop {
     public String kodeInventaris;
     public String merk;

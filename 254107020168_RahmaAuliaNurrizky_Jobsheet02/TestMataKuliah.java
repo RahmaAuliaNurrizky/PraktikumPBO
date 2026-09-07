@@ -1,5 +1,3 @@
-package P2;
-
 public class TestMataKuliah {
     public static void main(String[] args) {
         MataKuliah MK1 = new MataKuliah();

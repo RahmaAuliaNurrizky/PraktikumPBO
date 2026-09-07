@@ -1,5 +1,3 @@
-package P2;
-
 public class Buku {
     public String isbn;
     public String judul;
