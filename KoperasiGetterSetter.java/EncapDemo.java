@@ -17,7 +17,9 @@ public class EncapDemo {
     public void setAge(int newAge) {
         if (newAge > 30) {
             age = 30;
-        } else {
+        } else if (newAge < 18) {
+            age = 18;
+        }else {
             age = newAge;
         }
     }
