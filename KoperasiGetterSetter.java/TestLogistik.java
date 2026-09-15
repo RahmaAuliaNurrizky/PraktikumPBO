@@ -20,5 +20,15 @@ public class TestLogistik {
         System.out.println("\nMemasukkan muat/menurunkan barang seberat 1.500 kg...");
         kontainerAlfa.turunkanMuatan(1500);
         System.out.println("Berat muatan saat ini : " + kontainerAlfa.getBeratMuatanSaatIni() + " kg") ;
+
+        System.out.println();
+        System.out.println("Modifikasi Tugas 5");
+        System.out.println("\nMemasukkan muatan baru seberat 1.000 kg...");
+        kontainerAlfa.tambahMuatan(1000);
+        System.out.println("Berat muatan saat ini : " + kontainerAlfa.getBeratMuatanSaatIni() + " kg") ;
+
+        System.out.println("\nMemasukkan muat/menurunkan barang seberat 2.500 kg...");
+        kontainerAlfa.turunkanMuatan(2500);
+        System.out.println("Berat muatan saat ini : " + kontainerAlfa.getBeratMuatanSaatIni() + " kg") ;
     }
 }
