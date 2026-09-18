@@ -8,7 +8,7 @@ public class Laptop {
 
     public Laptop(String merk, Processor proc) {
         this.merk = merk;
-        this.proc = proc;
+        this.proc = new Processor("Generic", 1);
     }
 
     public void setMerk(String merk) {
