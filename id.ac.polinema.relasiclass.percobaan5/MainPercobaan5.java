@@ -1,6 +1,7 @@
 public class MainPercobaan5 {
     public static void main(String[] args) {
-        Mobil mobil = new Mobil("Avanza");
+        Mesin mesin = new Mesin();
+        Mobil mobil = new Mobil("Avanza", mesin);
         mobil.tampilkanInfo();
     }
 }
