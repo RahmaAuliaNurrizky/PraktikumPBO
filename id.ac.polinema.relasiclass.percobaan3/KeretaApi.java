@@ -39,7 +39,7 @@ public class KeretaApi {
         info += "Kelas : " + this.kelas + "\n";
         info += "Masinis : " + this.masinis + "\n";
         if (this.asisten != null) {
-            info += "Asisten : " + this.asisten + "\n";
+            info += "Asisten : " + this.asisten.info() + "\n";
         }
         return info;
     }
