@@ -1,5 +1,9 @@
 public class ClassB extends ClassA {
-    public int z;
+    private int z;
+
+    public void setZ(int z) {
+        this.z = z;
+    }
 
     public void getNilaiZ() {
         System.out.println("Nilai Z : " + z);
