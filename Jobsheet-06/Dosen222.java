@@ -1,9 +1,9 @@
-public class Dosen extends Pegawai {
+public class Dosen222 extends Pegawai {
     private int jumlahSKS;
     private int TARIF_SKS = 100000;
 
-    public Dosen(String nip, String nama, String alamat) {
-        super(nip, nama, alamat);
+    public Dosen222(String nip, String nama, String alamat) {
+        super(nip1, nama1, alamat1);
         this.jumlahSKS = 0;
     }
 

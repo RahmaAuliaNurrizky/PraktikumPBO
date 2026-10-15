@@ -1,5 +1,3 @@
-package MotorEncapsulation;
-
 public class Motor {
     private  int kecepatan = 0;
     private  boolean kontakOn = false;
