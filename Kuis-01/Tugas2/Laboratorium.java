@@ -3,11 +3,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class Laboratorium {
-    public static final int MAKS_PINJAM = 2;
+    public static int MAKS_PINJAM = 2;
 
-    private final String nama;
-    private final List<Laptop> daftarLaptop = new ArrayList<>();
-    private final List<Peminjaman> riwayat = new ArrayList<>();
+    private String nama;
+    private List<Laptop> daftarLaptop = new ArrayList<>();
+    private List<Peminjaman> riwayat = new ArrayList<>();
 
     public Laboratorium(String nama) {
         this.nama = nama;
@@ -45,8 +45,7 @@ public class Laboratorium {
 
         int jumlah = 0;
         for (Peminjaman p : riwayat) {
-            if (p.isAktif()
-                    && p.getMahasiswa().getNim().equals(m.getNim())) {
+            if (p.isAktif() && p.getMahasiswa().getNim().equals(m.getNim())) {
                 jumlah++;
             }
         }
@@ -60,8 +59,7 @@ public class Laboratorium {
 
         Laptop lp = cariLaptop(kodeAset);
 
-        if (lp == null || !lp.isTersedia()
-                || jumlahPinjamanAktif(m) >= MAKS_PINJAM) {
+        if (lp == null || !lp.isTersedia() || jumlahPinjamanAktif(m) >= MAKS_PINJAM) {
             return null;
         }
 
@@ -80,8 +78,7 @@ public class Laboratorium {
         }
 
         for (Peminjaman p : riwayat) {
-            if (p.isAktif()
-                    && p.getLaptop().getKodeAset().equals(kodeAset)) {
+            if (p.isAktif() && p.getLaptop().getKodeAset().equals(kodeAset)) {
                 p.getLaptop().kembalikan();
                 p.selesai();
                 return true;
