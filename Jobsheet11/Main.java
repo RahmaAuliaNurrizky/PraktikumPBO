@@ -10,7 +10,7 @@ public class Main {
         SavingsAccount savings = new SavingsAccount("A003", customer3, 100000, 0.02);
 
         try {
-            savings.withdraw(70000)
+            savings.withdraw(70000);
         } catch (InsufficientBalanceException e) {
             System.out.println("Withdraw failed: " + e.getMessage());
         }
@@ -27,5 +27,6 @@ public class Main {
         bank.AddAccount(acc2);
         bank.AddAccount(savings);
         bank.processMonthEnd();
+        bank.printHistory("A003");
     }
 }
