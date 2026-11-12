@@ -1,4 +1,4 @@
-package id.ac.polinema;
+package Jobsheet11;
 
 public class SavingsAccount extends Account implements InterestBearing {
     private static final double MINIMUM_BALANCE = 50000;

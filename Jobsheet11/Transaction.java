@@ -1,3 +1,5 @@
+package Jobsheet11;
+
 public class Transaction {
     private TransactionType type;
     private double amount;
@@ -7,15 +9,15 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public TransactionType getType() {
-        return type;
+    public TransactionType getType() { 
+        return type; 
     }
 
-    public double getAmount() {
-        return amount;
+    public double getAmount() { 
+        return amount; 
     }
 
-    @Override 
+    @Override
     public String toString() {
         return type + " " + amount;
     }

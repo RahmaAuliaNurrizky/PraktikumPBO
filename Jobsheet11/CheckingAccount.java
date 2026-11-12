@@ -1,4 +1,4 @@
-package id.ac.polinema;
+package Jobsheet11;
 
 public class CheckingAccount extends Account {
     private static final double MONTHLY_FEE = 15000;

@@ -1,36 +1,41 @@
-import id.ac.polinema.InterestBearing;
-import java.util.LinkedHashMap;
-import java.util.Map;
+package Jobsheet11;
+// import java.util.LinkedHashMap;
+// import java.util.Map;
 
 public class Bank {
-    private Map<String, Account> accounts = new LinkedHashMap<>();
-    
-    public boolean AddAccount(Account account) {
-        if (accounts.containsKey(account.getAccountNumber())) {
+    // private Map<String, Account> accounts = new LinkedHashMap<>();
+    private AccountRepository repository;
+
+    public Bank(AccountRepository repository) {
+        this.repository = repository;
+    }
+
+    public boolean addAccount(Account account) {
+        if (repository.findBynumvber(account.getAccountNumber()) != null) {
             return false;
         }
-        accounts.put(account.getAccountNumber(), account);
+        repository.save(account);
         return true;
     }
 
     public Account findAccount(String accountNumber) {
-        return accounts.get(accountNumber);
+        return repository.findBynumvber(accountNumber);
     }
 
     public void printAllAccounts() {
-        for (Account acc : accounts.values()) {
+        for (Account acc : repository.findAll()) {
             acc.printInfo();
         }
     }
 
     public void printMonthlyFees() {
-        for (Account acc : accounts.values()) {
+        for (Account acc : repository.findAll()) {
             System.out.println(acc.getAccountNumber() + " fee: " + acc.monthlyFee());
         }
     }
 
     public void processMonthEnd() {
-        for (Account acc : accounts.values()) {
+        for (Account acc : repository.findAll()) {
             if (acc instanceof InterestBearing bearing) {
                 bearing.applyInterest();
                 System.out.println(acc.getAccountNumber() + " interest applied, new balance: " + acc.getBalance());

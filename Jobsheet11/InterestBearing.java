@@ -1,4 +1,4 @@
-package id.ac.polinema;
+package Jobsheet11;
 
 public interface InterestBearing {
     void applyInterest();
